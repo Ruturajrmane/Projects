@@ -1,0 +1,39 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1658482694.3408284}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 35.5, "step": null, "ts": 1658482694.3536916}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.196990966796875, "step": null, "ts": 1658482694.3536916}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.05}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "SGD"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 128}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 1}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.7280458860759493", "step": null, "ts": 1658482702.1712136}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658482702.1763756}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 0.8574665784835815", "step": null, "ts": 1658482702.177376}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658482702.177376}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.7280458860759493, "step": null, "ts": 1658482702.177376}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.8574665784835815, "step": null, "ts": 1658482702.178382}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "2022/07/22 15:08:22 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.\nThe git executable must be specified in one of the following ways:\n    - be included in your $PATH\n    - be set via $GIT_PYTHON_GIT_EXECUTABLE\n    - explicitly set via git.refresh()\n\nAll git commands will error until this is rectified.\n\nThis initial warning can be silenced or aggravated in the future by setting the\n$GIT_PYTHON_REFRESH environment variable. Use one of the following values:\n    - quiet|q|silence|s|none|n|0: for no warning or exception\n    - warn|w|warning|1: for a printed warning\n    - error|e|raise|r|2: for a raised exception\n\nExample:\n    export GIT_PYTHON_REFRESH=quiet\n\n", "step": null, "ts": 1658482702.1914198}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker ALTAFKOP202.", "step": null, "ts": 1658482702.2352488}, {"value": "Marking run as failed", "step": null, "ts": 1658482702.2352488}, {"value": "Traceback:", "step": null, "ts": 1658482702.2352488}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 130, in <module>\n    mlflow.pytorch(state_dict, artifact_path=\"model\")\n", "step": null, "ts": 1658482702.2352488}, {"value": "'module' object is not callable", "step": null, "ts": 1658482702.2352488}]}, "version": 28}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1658482702.2352488}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 130, in <module>\n", "step": null, "ts": 1658482702.2371016}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658482702.240832}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "mlflow.pytorch(state_dict, artifact_path=\"model\")", "step": null, "ts": 1658482702.240832}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658482702.240832}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "TypeError", "step": null, "ts": 1658482702.2418358}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1658482702.2418358}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "'module' object is not callable", "step": null, "ts": 1658482702.2418358}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658482702.242833}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1658482702.2429557}]}, "version": 39}

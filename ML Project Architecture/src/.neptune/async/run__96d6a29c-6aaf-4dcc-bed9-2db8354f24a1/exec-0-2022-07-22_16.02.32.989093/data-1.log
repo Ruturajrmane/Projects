@@ -1,0 +1,44 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1658485953.4057834}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.4, "step": null, "ts": 1658485953.4057834}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.873470306396484, "step": null, "ts": 1658485953.4057834}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.5}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "SGD"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 128}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 3}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.866495253164557", "step": null, "ts": 1658485960.564523}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485960.564523}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 1.6058253049850464", "step": null, "ts": 1658485960.564523}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485960.564523}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.866495253164557, "step": null, "ts": 1658485960.564523}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.6058253049850464, "step": null, "ts": 1658485960.564523}]}, "version": 26}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 53.8, "step": null, "ts": 1658485963.4229975}]}, "version": 27}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.908565521240234, "step": null, "ts": 1658485963.4229975}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 2, is 0.8989319620253164", "step": null, "ts": 1658485967.6523542}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485967.6523542}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 2, is 1.5724732875823975", "step": null, "ts": 1658485967.6523542}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485967.6523542}]}, "version": 32}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.8989319620253164, "step": null, "ts": 1658485967.6523542}]}, "version": 33}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5724732875823975, "step": null, "ts": 1658485967.6523542}]}, "version": 34}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 53.9, "step": null, "ts": 1658485973.425477}]}, "version": 35}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.936843872070312, "step": null, "ts": 1658485973.425477}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 3, is 0.911689082278481", "step": null, "ts": 1658485974.921112}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485974.921112}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 3, is 1.5568394660949707", "step": null, "ts": 1658485974.921112}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658485974.921112}]}, "version": 40}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.911689082278481, "step": null, "ts": 1658485974.921112}]}, "version": 41}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5568394660949707, "step": null, "ts": 1658485974.921112}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "2022/07/22 16:02:54 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.\nThe git executable must be specified in one of the following ways:\n    - be included in your $PATH\n    - be set via $GIT_PYTHON_GIT_EXECUTABLE\n    - explicitly set via git.refresh()\n\nAll git commands will error until this is rectified.\n\nThis initial warning can be silenced or aggravated in the future by setting the\n$GIT_PYTHON_REFRESH environment variable. Use one of the following values:\n    - quiet|q|silence|s|none|n|0: for no warning or exception\n    - warn|w|warning|1: for a printed warning\n    - error|e|raise|r|2: for a raised exception\n\nExample:\n    export GIT_PYTHON_REFRESH=quiet\n\n", "step": null, "ts": 1658485974.929172}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1658485974.9916544}]}, "version": 44}

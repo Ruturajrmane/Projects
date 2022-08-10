@@ -1,0 +1,72 @@
+{
+    "Model_config": [
+        {
+            "Layer_idx" : 0,
+            "Layer_name" : "Conv2d",
+            "Num_inputs" : 1,
+            "Num_outputs" : 16,                       
+            "Activation" : "ReLU", 
+            "kernel_size" : 5,
+            "stride":1,
+            "padding":2,
+            "Bias" : false,
+            "Dropout" : false
+        },
+        {
+            "Layer_idx":2,
+            "Layer_name" : "MaxPool2d",
+            "Num_inputs" : 784,
+            "Num_outputs" : 32,
+            "Activation" : "ReLU",
+            "kernel_size" :2,
+            "stride":"",
+            "padding":"",
+            "Bias" : false,
+            "Dropout" : false
+        },
+        {
+            "Layer_idx" : 3,
+            "Layer_name" : "Conv2d",
+            "Num_inputs" : 16,
+            "Num_outputs" : 32,
+            "Activation" : "Relu",
+            "kernel_size" : 5,
+            "stride":1,
+            "padding":2,
+            "Bias" : false,
+            "Dropout" : false
+        },
+        {
+            "Layer_idx":4,
+            "Layer_name" : "MaxPool2d",
+            "Num_inputs" : 784,
+            "Num_outputs" : 32,
+            "Activation" : "Relu",
+            "kernel_size" :2,
+            "stride":"",
+            "padding":"",
+            "Bias" : false,
+            "Dropout" : false
+        },
+        {
+            "Layer_idx":5,
+            "Layer_name" : "Linear_1",
+            "Num_inputs" : 1568,
+            "Num_outputs" : 10,
+            "Activation" : "",
+            "kernel_size" :"",
+            "stride":"",
+            "padding":"",
+            "Bias" : false,
+            "Dropout" : false
+        }
+    ],
+
+    "Hyperparameters" : {
+            "Optimizer" : "Adam",
+            "Learning_rate" : 0.0001,
+            "No_of_epochs" : 30,
+            "Batch_size" : 50,
+            "loss_fun" : "cross_entropy"
+    }
+}

@@ -1,0 +1,44 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1658485769.0724854}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.3, "step": null, "ts": 1658485769.0724854}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.903934478759766, "step": null, "ts": 1658485769.0724854}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.5}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "SGD"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 128}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 30}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker ALTAFKOP202.", "step": null, "ts": 1658485769.1258612}, {"value": "Marking run as failed", "step": null, "ts": 1658485769.1258612}, {"value": "Traceback:", "step": null, "ts": 1658485769.1258612}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 125, in <module>\n    loss = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)\n", "step": null, "ts": 1658485769.1258612}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 60, in fit\n    pred = model(image.reshape(-1,784))\n", "step": null, "ts": 1658485769.1258612}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1110, in _call_impl\n    return forward_call(*input, **kwargs)\n", "step": null, "ts": 1658485769.1258612}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\nn\\modules\\container.py\", line 141, in forward\n    input = module(input)\n", "step": null, "ts": 1658485769.1258612}, {"value": "'NoneType' object is not callable", "step": null, "ts": 1658485769.1258612}]}, "version": 21}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1658485769.1258612}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 125, in <module>\n", "step": null, "ts": 1658485769.1258612}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658485769.1258612}]}, "version": 25}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "loss = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)", "step": null, "ts": 1658485769.1258612}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658485769.1258612}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 60, in fit\n", "step": null, "ts": 1658485769.1258612}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658485769.1258612}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "pred = model(image.reshape(-1,784))", "step": null, "ts": 1658485769.1258612}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658485769.1258612}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1110, in _call_impl\n", "step": null, "ts": 1658485769.1258612}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658485769.1414983}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return forward_call(*input, **kwargs)", "step": null, "ts": 1658485769.1414983}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658485769.1414983}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\nn\\modules\\container.py\", line 141, in forward\n", "step": null, "ts": 1658485769.1414983}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658485769.1414983}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "input = module(input)", "step": null, "ts": 1658485769.1414983}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658485769.1414983}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "TypeError", "step": null, "ts": 1658485769.1414983}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1658485769.1414983}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "'NoneType' object is not callable", "step": null, "ts": 1658485769.1414983}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658485769.1414983}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1658485769.1414983}]}, "version": 44}

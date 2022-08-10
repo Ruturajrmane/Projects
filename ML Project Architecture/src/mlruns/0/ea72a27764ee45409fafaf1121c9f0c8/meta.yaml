@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/RuturajMane/Desktop/public-projects/mnist-ruturaj/src/mlruns/0/ea72a27764ee45409fafaf1121c9f0c8/artifacts
+end_time: 1658485974989
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: ea72a27764ee45409fafaf1121c9f0c8
+run_uuid: ea72a27764ee45409fafaf1121c9f0c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1658485974941
+status: 3
+tags: []
+user_id: RuturajMane

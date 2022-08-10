@@ -1,0 +1,256 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1658492078.7857933}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 8.4, "step": null, "ts": 1658492078.7857933}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.067398071289062, "step": null, "ts": 1658492078.7857933}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.5}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "SGD"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 128}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 30}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.8458267405063291", "step": null, "ts": 1658492085.8625002}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492085.8625002}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 1.6073585748672485", "step": null, "ts": 1658492085.8635018}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492085.8635018}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.8458267405063291, "step": null, "ts": 1658492085.8645015}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.6073585748672485, "step": null, "ts": 1658492085.8645015}]}, "version": 26}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.4, "step": null, "ts": 1658492088.8003094}]}, "version": 27}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.076499938964844, "step": null, "ts": 1658492088.8003094}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 2, is 0.8874604430379747", "step": null, "ts": 1658492093.2321756}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492093.2321756}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 2, is 1.5766558647155762", "step": null, "ts": 1658492093.2321756}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492093.2321756}]}, "version": 32}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.8874604430379747, "step": null, "ts": 1658492093.2321756}]}, "version": 33}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5766558647155762, "step": null, "ts": 1658492093.2321756}]}, "version": 34}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.0, "step": null, "ts": 1658492098.8166625}]}, "version": 35}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.11001205444336, "step": null, "ts": 1658492098.8166625}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 3, is 0.9113924050632911", "step": null, "ts": 1658492101.211599}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492101.211599}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 3, is 1.5562564134597778", "step": null, "ts": 1658492101.2126002}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492101.2126002}]}, "version": 40}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9113924050632911, "step": null, "ts": 1658492101.2136}]}, "version": 41}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5562564134597778, "step": null, "ts": 1658492101.2136}]}, "version": 42}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.7, "step": null, "ts": 1658492108.8335454}]}, "version": 43}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.168357849121094, "step": null, "ts": 1658492108.8335454}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 4, is 0.9146558544303798", "step": null, "ts": 1658492109.083393}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492109.083393}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 4, is 1.5472216606140137", "step": null, "ts": 1658492109.083393}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492109.083393}]}, "version": 48}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9146558544303798, "step": null, "ts": 1658492109.083393}]}, "version": 49}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5472216606140137, "step": null, "ts": 1658492109.083393}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 5, is 0.9214794303797469", "step": null, "ts": 1658492117.5820665}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492117.5820665}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 5, is 1.5402021408081055", "step": null, "ts": 1658492117.5820665}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492117.5840964}]}, "version": 54}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9214794303797469, "step": null, "ts": 1658492117.5840964}]}, "version": 55}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5402021408081055, "step": null, "ts": 1658492117.5840964}]}, "version": 56}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.0, "step": null, "ts": 1658492118.8491719}]}, "version": 57}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.224658966064453, "step": null, "ts": 1658492118.8491719}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 6, is 0.924248417721519", "step": null, "ts": 1658492126.3443627}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492126.3443627}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 6, is 1.535555362701416", "step": null, "ts": 1658492126.3453643}]}, "version": 61}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492126.3463626}]}, "version": 62}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.924248417721519, "step": null, "ts": 1658492126.3463626}]}, "version": 63}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.535555362701416, "step": null, "ts": 1658492126.3473623}]}, "version": 64}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.5, "step": null, "ts": 1658492128.8648787}]}, "version": 65}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.22829818725586, "step": null, "ts": 1658492128.8648787}]}, "version": 66}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 7, is 0.9288963607594937", "step": null, "ts": 1658492135.0756533}]}, "version": 67}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492135.0756533}]}, "version": 68}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 7, is 1.5323171615600586", "step": null, "ts": 1658492135.0756533}]}, "version": 69}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492135.0837202}]}, "version": 70}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9288963607594937, "step": null, "ts": 1658492135.0837202}]}, "version": 71}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5323171615600586, "step": null, "ts": 1658492135.0837202}]}, "version": 72}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.6, "step": null, "ts": 1658492138.8775902}]}, "version": 73}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.259361267089844, "step": null, "ts": 1658492138.8775902}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 8, is 0.9299841772151899", "step": null, "ts": 1658492144.2301924}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492144.231193}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 8, is 1.530173897743225", "step": null, "ts": 1658492144.2321932}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492144.2321932}]}, "version": 78}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9299841772151899, "step": null, "ts": 1658492144.2321932}]}, "version": 79}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.530173897743225, "step": null, "ts": 1658492144.2331917}]}, "version": 80}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 61.1, "step": null, "ts": 1658492148.8867824}]}, "version": 81}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.314872741699219, "step": null, "ts": 1658492148.8867824}]}, "version": 82}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 9, is 0.9329509493670886", "step": null, "ts": 1658492153.375324}]}, "version": 83}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492153.375324}]}, "version": 84}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 9, is 1.526902198791504", "step": null, "ts": 1658492153.375324}]}, "version": 85}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492153.375324}]}, "version": 86}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9329509493670886, "step": null, "ts": 1658492153.375324}]}, "version": 87}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.526902198791504, "step": null, "ts": 1658492153.375324}]}, "version": 88}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 59.6, "step": null, "ts": 1658492158.8885443}]}, "version": 89}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.264839172363281, "step": null, "ts": 1658492158.8885443}]}, "version": 90}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 10, is 0.9371044303797469", "step": null, "ts": 1658492162.9131174}]}, "version": 91}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492162.9131174}]}, "version": 92}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 10, is 1.52499258518219", "step": null, "ts": 1658492162.9141164}]}, "version": 93}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492162.9141164}]}, "version": 94}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9371044303797469, "step": null, "ts": 1658492162.9151165}]}, "version": 95}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.52499258518219, "step": null, "ts": 1658492162.9151165}]}, "version": 96}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 61.8, "step": null, "ts": 1658492168.9026752}]}, "version": 97}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.308464050292969, "step": null, "ts": 1658492168.9026752}]}, "version": 98}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 11, is 0.9377966772151899", "step": null, "ts": 1658492172.4386482}]}, "version": 99}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492172.4396522}]}, "version": 100}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 11, is 1.5233392715454102", "step": null, "ts": 1658492172.4406497}]}, "version": 101}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492172.4406497}]}, "version": 102}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9377966772151899, "step": null, "ts": 1658492172.4406497}]}, "version": 103}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5233392715454102, "step": null, "ts": 1658492172.441649}]}, "version": 104}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 58.4, "step": null, "ts": 1658492178.9082215}]}, "version": 105}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.346508026123047, "step": null, "ts": 1658492178.9082215}]}, "version": 106}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 12, is 0.9388844936708861", "step": null, "ts": 1658492181.657481}]}, "version": 107}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492181.657481}]}, "version": 108}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 12, is 1.5218323469161987", "step": null, "ts": 1658492181.657481}]}, "version": 109}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492181.657481}]}, "version": 110}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9388844936708861, "step": null, "ts": 1658492181.657481}]}, "version": 111}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5218323469161987, "step": null, "ts": 1658492181.657481}]}, "version": 112}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.2, "step": null, "ts": 1658492188.9231257}]}, "version": 113}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.385604858398438, "step": null, "ts": 1658492188.9231257}]}, "version": 114}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 13, is 0.9401700949367089", "step": null, "ts": 1658492190.6201558}]}, "version": 115}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492190.6201558}]}, "version": 116}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 13, is 1.5202051401138306", "step": null, "ts": 1658492190.6201558}]}, "version": 117}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492190.6201558}]}, "version": 118}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9401700949367089, "step": null, "ts": 1658492190.6201558}]}, "version": 119}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5202051401138306, "step": null, "ts": 1658492190.6201558}]}, "version": 120}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.0, "step": null, "ts": 1658492198.929791}]}, "version": 121}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.402454376220703, "step": null, "ts": 1658492198.929791}]}, "version": 122}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 14, is 0.9423457278481012", "step": null, "ts": 1658492199.2147474}]}, "version": 123}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492199.2147474}]}, "version": 124}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 14, is 1.5188575983047485", "step": null, "ts": 1658492199.2228105}]}, "version": 125}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492199.2228105}]}, "version": 126}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9423457278481012, "step": null, "ts": 1658492199.2228105}]}, "version": 127}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5188575983047485, "step": null, "ts": 1658492199.2228105}]}, "version": 128}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 15, is 0.9437302215189873", "step": null, "ts": 1658492208.24081}]}, "version": 129}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492208.24081}]}, "version": 130}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 15, is 1.517082929611206", "step": null, "ts": 1658492208.24081}]}, "version": 131}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492208.24081}]}, "version": 132}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9437302215189873, "step": null, "ts": 1658492208.24081}]}, "version": 133}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.517082929611206, "step": null, "ts": 1658492208.24081}]}, "version": 134}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.8, "step": null, "ts": 1658492208.9461648}]}, "version": 135}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.441104888916016, "step": null, "ts": 1658492208.9461648}]}, "version": 136}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 16, is 0.9444224683544303", "step": null, "ts": 1658492217.2470696}]}, "version": 137}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492217.2470696}]}, "version": 138}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 16, is 1.5163363218307495", "step": null, "ts": 1658492217.2470696}]}, "version": 139}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492217.2470696}]}, "version": 140}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9444224683544303, "step": null, "ts": 1658492217.2470696}]}, "version": 141}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5163363218307495, "step": null, "ts": 1658492217.2470696}]}, "version": 142}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.4, "step": null, "ts": 1658492218.9488237}]}, "version": 143}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.529716491699219, "step": null, "ts": 1658492218.9488237}]}, "version": 144}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 17, is 0.9458069620253164", "step": null, "ts": 1658492226.6460445}]}, "version": 145}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492226.6460445}]}, "version": 146}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 17, is 1.5149239301681519", "step": null, "ts": 1658492226.6460445}]}, "version": 147}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492226.6460445}]}, "version": 148}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9458069620253164, "step": null, "ts": 1658492226.6460445}]}, "version": 149}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5149239301681519, "step": null, "ts": 1658492226.6460445}]}, "version": 150}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.1, "step": null, "ts": 1658492228.959406}]}, "version": 151}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.523269653320312, "step": null, "ts": 1658492228.959406}]}, "version": 152}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 18, is 0.9466969936708861", "step": null, "ts": 1658492235.8559253}]}, "version": 153}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492235.8559253}]}, "version": 154}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 18, is 1.514051079750061", "step": null, "ts": 1658492235.8639908}]}, "version": 155}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492235.8639908}]}, "version": 156}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9466969936708861, "step": null, "ts": 1658492235.8639908}]}, "version": 157}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.514051079750061, "step": null, "ts": 1658492235.8660128}]}, "version": 158}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 57.5, "step": null, "ts": 1658492238.9776611}]}, "version": 159}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.55521011352539, "step": null, "ts": 1658492238.9776611}]}, "version": 160}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 19, is 0.946993670886076", "step": null, "ts": 1658492244.926812}]}, "version": 161}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492244.926812}]}, "version": 162}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 19, is 1.5138142108917236", "step": null, "ts": 1658492244.934897}]}, "version": 163}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492244.934897}]}, "version": 164}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.946993670886076, "step": null, "ts": 1658492244.934897}]}, "version": 165}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5138142108917236, "step": null, "ts": 1658492244.934897}]}, "version": 166}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 59.8, "step": null, "ts": 1658492248.9885972}]}, "version": 167}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.619922637939453, "step": null, "ts": 1658492248.9885972}]}, "version": 168}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 20, is 0.9471914556962026", "step": null, "ts": 1658492255.118922}]}, "version": 169}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492255.1194572}]}, "version": 170}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 20, is 1.5128920078277588", "step": null, "ts": 1658492255.1205125}]}, "version": 171}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492255.1210465}]}, "version": 172}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9471914556962026, "step": null, "ts": 1658492255.1210465}]}, "version": 173}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5128920078277588, "step": null, "ts": 1658492255.122106}]}, "version": 174}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 62.1, "step": null, "ts": 1658492258.9902067}]}, "version": 175}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.705574035644531, "step": null, "ts": 1658492258.9902067}]}, "version": 176}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 21, is 0.9490704113924051", "step": null, "ts": 1658492265.7513926}]}, "version": 177}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492265.7513926}]}, "version": 178}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 21, is 1.5119987726211548", "step": null, "ts": 1658492265.753392}]}, "version": 179}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492265.753392}]}, "version": 180}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9490704113924051, "step": null, "ts": 1658492265.753392}]}, "version": 181}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5119987726211548, "step": null, "ts": 1658492265.754393}]}, "version": 182}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 61.0, "step": null, "ts": 1658492268.9961133}]}, "version": 183}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.729049682617188, "step": null, "ts": 1658492268.9961133}]}, "version": 184}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 22, is 0.9486748417721519", "step": null, "ts": 1658492275.6272793}]}, "version": 185}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492275.6282794}]}, "version": 186}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 22, is 1.5120680332183838", "step": null, "ts": 1658492275.6292799}]}, "version": 187}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492275.6292799}]}, "version": 188}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9486748417721519, "step": null, "ts": 1658492275.6292799}]}, "version": 189}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5120680332183838, "step": null, "ts": 1658492275.6302798}]}, "version": 190}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 56.1, "step": null, "ts": 1658492279.0071387}]}, "version": 191}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.757038116455078, "step": null, "ts": 1658492279.0071387}]}, "version": 192}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 23, is 0.9499604430379747", "step": null, "ts": 1658492284.9252872}]}, "version": 193}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492284.9252872}]}, "version": 194}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 23, is 1.5113292932510376", "step": null, "ts": 1658492284.9333115}]}, "version": 195}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492284.9333115}]}, "version": 196}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9499604430379747, "step": null, "ts": 1658492284.9333115}]}, "version": 197}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5113292932510376, "step": null, "ts": 1658492284.9333115}]}, "version": 198}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.0, "step": null, "ts": 1658492289.0105476}]}, "version": 199}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.774787902832031, "step": null, "ts": 1658492289.0105476}]}, "version": 200}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 24, is 0.9486748417721519", "step": null, "ts": 1658492295.0723343}]}, "version": 201}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492295.0733325}]}, "version": 202}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 24, is 1.51083505153656", "step": null, "ts": 1658492295.0733325}]}, "version": 203}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492295.0743337}]}, "version": 204}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9486748417721519, "step": null, "ts": 1658492295.0743337}]}, "version": 205}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.51083505153656, "step": null, "ts": 1658492295.0753322}]}, "version": 206}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 60.2, "step": null, "ts": 1658492299.0130107}]}, "version": 207}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.849365234375, "step": null, "ts": 1658492299.0130107}]}, "version": 208}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 25, is 0.9502571202531646", "step": null, "ts": 1658492304.8430436}]}, "version": 209}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492304.8430436}]}, "version": 210}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 25, is 1.5105420351028442", "step": null, "ts": 1658492304.8430436}]}, "version": 211}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492304.8430436}]}, "version": 212}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9502571202531646, "step": null, "ts": 1658492304.8430436}]}, "version": 213}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5105420351028442, "step": null, "ts": 1658492304.8430436}]}, "version": 214}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.2, "step": null, "ts": 1658492309.0303073}]}, "version": 215}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.839012145996094, "step": null, "ts": 1658492309.0303073}]}, "version": 216}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 26, is 0.9521360759493671", "step": null, "ts": 1658492314.2950633}]}, "version": 217}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492314.2950633}]}, "version": 218}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 26, is 1.5098198652267456", "step": null, "ts": 1658492314.3031044}]}, "version": 219}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492314.3031044}]}, "version": 220}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9521360759493671, "step": null, "ts": 1658492314.3031044}]}, "version": 221}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5098198652267456, "step": null, "ts": 1658492314.3051639}]}, "version": 222}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.8, "step": null, "ts": 1658492319.0495918}]}, "version": 223}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.884693145751953, "step": null, "ts": 1658492319.0495918}]}, "version": 224}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 27, is 0.9510482594936709", "step": null, "ts": 1658492323.6525037}]}, "version": 225}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492323.6525037}]}, "version": 226}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 27, is 1.5095633268356323", "step": null, "ts": 1658492323.6525037}]}, "version": 227}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492323.6525037}]}, "version": 228}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9510482594936709, "step": null, "ts": 1658492323.6525037}]}, "version": 229}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5095633268356323, "step": null, "ts": 1658492323.6525037}]}, "version": 230}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 56.1, "step": null, "ts": 1658492329.0566216}]}, "version": 231}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.943763732910156, "step": null, "ts": 1658492329.0566216}]}, "version": 232}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 28, is 0.9525316455696202", "step": null, "ts": 1658492333.7694135}]}, "version": 233}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492333.7694135}]}, "version": 234}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 28, is 1.5093958377838135", "step": null, "ts": 1658492333.7694135}]}, "version": 235}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492333.7694135}]}, "version": 236}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9525316455696202, "step": null, "ts": 1658492333.7694135}]}, "version": 237}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5093958377838135, "step": null, "ts": 1658492333.7694135}]}, "version": 238}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.3, "step": null, "ts": 1658492339.0758917}]}, "version": 239}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.936107635498047, "step": null, "ts": 1658492339.0758917}]}, "version": 240}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 29, is 0.9521360759493671", "step": null, "ts": 1658492343.208389}]}, "version": 241}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492343.208389}]}, "version": 242}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 29, is 1.508988380432129", "step": null, "ts": 1658492343.208389}]}, "version": 243}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492343.208389}]}, "version": 244}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9521360759493671, "step": null, "ts": 1658492343.208389}]}, "version": 245}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.508988380432129, "step": null, "ts": 1658492343.208389}]}, "version": 246}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.3, "step": null, "ts": 1658492349.0933821}]}, "version": 247}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.962394714355469, "step": null, "ts": 1658492349.0933821}]}, "version": 248}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 30, is 0.9530261075949367", "step": null, "ts": 1658492352.5654302}]}, "version": 249}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492352.5658917}]}, "version": 250}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 30, is 1.5085712671279907", "step": null, "ts": 1658492352.5668907}]}, "version": 251}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658492352.5668907}]}, "version": 252}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9530261075949367, "step": null, "ts": 1658492352.5668907}]}, "version": 253}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5085712671279907, "step": null, "ts": 1658492352.5678902}]}, "version": 254}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "2022/07/22 17:49:12 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.\nThe git executable must be specified in one of the following ways:\n    - be included in your $PATH\n    - be set via $GIT_PYTHON_GIT_EXECUTABLE\n    - explicitly set via git.refresh()\n\nAll git commands will error until this is rectified.\n\nThis initial warning can be silenced or aggravated in the future by setting the\n$GIT_PYTHON_REFRESH environment variable. Use one of the following values:\n    - quiet|q|silence|s|none|n|0: for no warning or exception\n    - warn|w|warning|1: for a printed warning\n    - error|e|raise|r|2: for a raised exception\n\nExample:\n    export GIT_PYTHON_REFRESH=quiet\n\n", "step": null, "ts": 1658492352.5808904}]}, "version": 255}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1658492352.648471}]}, "version": 256}

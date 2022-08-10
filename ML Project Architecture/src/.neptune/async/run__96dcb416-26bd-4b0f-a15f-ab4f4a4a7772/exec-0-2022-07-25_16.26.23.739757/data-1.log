@@ -1,0 +1,144 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1658746584.241501}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.2, "step": null, "ts": 1658746584.241501}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.702018737792969, "step": null, "ts": 1658746584.241501}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.5}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "SGD"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 128}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 5}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.8677808544303798", "step": null, "ts": 1658746590.8918533}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746590.8938763}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 1.615965485572815", "step": null, "ts": 1658746590.8938763}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746590.8938763}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.8677808544303798, "step": null, "ts": 1658746590.8938763}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.615965485572815, "step": null, "ts": 1658746590.8938763}]}, "version": 26}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 52.8, "step": null, "ts": 1658746594.2632265}]}, "version": 27}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.743770599365234, "step": null, "ts": 1658746594.2632265}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 2, is 0.9019976265822784", "step": null, "ts": 1658746597.8056479}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746597.8056479}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 2, is 1.57572340965271", "step": null, "ts": 1658746597.8056479}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746597.8056479}]}, "version": 32}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9019976265822784, "step": null, "ts": 1658746597.8056479}]}, "version": 33}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.57572340965271, "step": null, "ts": 1658746597.8056479}]}, "version": 34}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.4, "step": null, "ts": 1658746604.267885}]}, "version": 35}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.81301498413086, "step": null, "ts": 1658746604.267885}]}, "version": 36}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 11.2, "step": null, "ts": 1658746614.2682698}]}, "version": 37}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.8038330078125, "step": null, "ts": 1658746614.2682698}]}, "version": 38}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.2, "step": null, "ts": 1658746624.2834933}]}, "version": 39}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.81610107421875, "step": null, "ts": 1658746624.2834933}]}, "version": 40}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 4.4, "step": null, "ts": 1658746634.290645}]}, "version": 41}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.816703796386719, "step": null, "ts": 1658746634.290645}]}, "version": 42}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 4.4, "step": null, "ts": 1658746644.2932966}]}, "version": 43}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.806842803955078, "step": null, "ts": 1658746644.2932966}]}, "version": 44}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 3.3, "step": null, "ts": 1658746654.2980318}]}, "version": 45}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.804637908935547, "step": null, "ts": 1658746654.2980318}]}, "version": 46}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 5.7, "step": null, "ts": 1658746664.3109996}]}, "version": 47}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.822879791259766, "step": null, "ts": 1658746664.3109996}]}, "version": 48}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 5.4, "step": null, "ts": 1658746674.3193915}]}, "version": 49}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.823921203613281, "step": null, "ts": 1658746674.3193915}]}, "version": 50}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 6.2, "step": null, "ts": 1658746684.3275483}]}, "version": 51}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.819549560546875, "step": null, "ts": 1658746684.3275483}]}, "version": 52}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 9.0, "step": null, "ts": 1658746694.348663}]}, "version": 53}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.807655334472656, "step": null, "ts": 1658746694.348663}]}, "version": 54}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 10.0, "step": null, "ts": 1658746704.3653085}]}, "version": 55}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.68783950805664, "step": null, "ts": 1658746704.3653085}]}, "version": 56}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 5.4, "step": null, "ts": 1658746714.3753457}]}, "version": 57}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.664466857910156, "step": null, "ts": 1658746714.3753457}]}, "version": 58}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 9.2, "step": null, "ts": 1658746724.385812}]}, "version": 59}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.677135467529297, "step": null, "ts": 1658746724.385812}]}, "version": 60}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 9.4, "step": null, "ts": 1658746734.389528}]}, "version": 61}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.792625427246094, "step": null, "ts": 1658746734.389528}]}, "version": 62}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 6.0, "step": null, "ts": 1658746744.399537}]}, "version": 63}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.779834747314453, "step": null, "ts": 1658746744.399537}]}, "version": 64}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.3, "step": null, "ts": 1658746754.4084995}]}, "version": 65}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.788814544677734, "step": null, "ts": 1658746754.4084995}]}, "version": 66}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 6.3, "step": null, "ts": 1658746764.4170144}]}, "version": 67}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.778255462646484, "step": null, "ts": 1658746764.4170144}]}, "version": 68}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 2.7, "step": null, "ts": 1658746774.4233742}]}, "version": 69}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.772758483886719, "step": null, "ts": 1658746774.4233742}]}, "version": 70}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 3.9, "step": null, "ts": 1658746784.428407}]}, "version": 71}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.76932144165039, "step": null, "ts": 1658746784.428407}]}, "version": 72}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 3.6, "step": null, "ts": 1658746794.4366398}]}, "version": 73}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.767547607421875, "step": null, "ts": 1658746794.4366398}]}, "version": 74}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 5.8, "step": null, "ts": 1658746804.4437459}]}, "version": 75}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.798110961914062, "step": null, "ts": 1658746804.4437459}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 3, is 0.9101068037974683", "step": null, "ts": 1658746805.2762353}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746805.2762353}]}, "version": 78}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 3, is 1.560469627380371", "step": null, "ts": 1658746805.2762353}]}, "version": 79}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746805.2762353}]}, "version": 80}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9101068037974683, "step": null, "ts": 1658746805.2762353}]}, "version": 81}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.560469627380371, "step": null, "ts": 1658746805.2762353}]}, "version": 82}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 4, is 0.9132713607594937", "step": null, "ts": 1658746811.933655}]}, "version": 83}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746811.933655}]}, "version": 84}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 4, is 1.5535855293273926", "step": null, "ts": 1658746811.933655}]}, "version": 85}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746811.933655}]}, "version": 86}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9132713607594937, "step": null, "ts": 1658746811.933655}]}, "version": 87}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5535855293273926, "step": null, "ts": 1658746811.9417107}]}, "version": 88}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 49.1, "step": null, "ts": 1658746814.4518213}]}, "version": 89}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.74923324584961, "step": null, "ts": 1658746814.4518213}]}, "version": 90}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 5, is 0.9197982594936709", "step": null, "ts": 1658746818.653207}]}, "version": 91}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746818.653207}]}, "version": 92}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 5, is 1.5461235046386719", "step": null, "ts": 1658746818.653207}]}, "version": 93}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1658746818.653207}]}, "version": 94}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9197982594936709, "step": null, "ts": 1658746818.653207}]}, "version": 95}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 1.5461235046386719, "step": null, "ts": 1658746818.653207}]}, "version": 96}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 27.8, "step": null, "ts": 1658746824.4624524}]}, "version": 97}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 8.785137176513672, "step": null, "ts": 1658746824.4624524}]}, "version": 98}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker ALTAFKOP202.", "step": null, "ts": 1658746824.5624545}, {"value": "Marking run as failed", "step": null, "ts": 1658746824.5624545}, {"value": "Traceback:", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 128, in <module>\n    lssplt(dl)\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\utils\\common.py\", line 11, in lssplt\n    pl.plot([(i+1) for i in  range(len(dl))], dl)\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\pyplot.py\", line 2769, in plot\n    return gca().plot(\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_axes.py\", line 1632, in plot\n    lines = [*self._get_lines(*args, data=data, **kwargs)]\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_base.py\", line 312, in __call__\n    yield from self._plot_args(this, kwargs)\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_base.py\", line 488, in _plot_args\n    y = _check_1d(xy[1])\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\cbook\\__init__.py\", line 1306, in _check_1d\n    return np.atleast_1d(x)\n", "step": null, "ts": 1658746824.5624545}]}, "version": 99}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "  File \"<__array_function__ internals>\", line 180, in atleast_1d\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\numpy\\core\\shape_base.py\", line 65, in atleast_1d\n    ary = asanyarray(ary)\n", "step": null, "ts": 1658746824.5624545}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\_tensor.py\", line 732, in __array__\n    return self.numpy()\n", "step": null, "ts": 1658746824.5624545}, {"value": "Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.", "step": null, "ts": 1658746824.5624545}]}, "version": 100}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 101}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1658746824.5624545}]}, "version": 102}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\train.py\", line 128, in <module>\n", "step": null, "ts": 1658746824.5624545}]}, "version": 103}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5624545}]}, "version": 104}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "lssplt(dl)", "step": null, "ts": 1658746824.5624545}]}, "version": 105}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5624545}]}, "version": 106}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\public-projects\\mnist-ruturaj\\src\\utils\\common.py\", line 11, in lssplt\n", "step": null, "ts": 1658746824.5624545}]}, "version": 107}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5624545}]}, "version": 108}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "pl.plot([(i+1) for i in  range(len(dl))], dl)", "step": null, "ts": 1658746824.5624545}]}, "version": 109}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5624545}]}, "version": 110}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\pyplot.py\", line 2769, in plot\n", "step": null, "ts": 1658746824.5624545}]}, "version": 111}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5624545}]}, "version": 112}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return gca().plot(", "step": null, "ts": 1658746824.5624545}]}, "version": 113}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5624545}]}, "version": 114}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_axes.py\", line 1632, in plot\n", "step": null, "ts": 1658746824.5780785}]}, "version": 115}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5780785}]}, "version": 116}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "lines = [*self._get_lines(*args, data=data, **kwargs)]", "step": null, "ts": 1658746824.5780785}]}, "version": 117}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5780785}]}, "version": 118}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_base.py\", line 312, in __call__\n", "step": null, "ts": 1658746824.5780785}]}, "version": 119}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5845888}]}, "version": 120}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "yield from self._plot_args(this, kwargs)", "step": null, "ts": 1658746824.5845888}]}, "version": 121}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 122}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\axes\\_base.py\", line 488, in _plot_args\n", "step": null, "ts": 1658746824.5845888}]}, "version": 123}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5845888}]}, "version": 124}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "y = _check_1d(xy[1])", "step": null, "ts": 1658746824.5845888}]}, "version": 125}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 126}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\cbook\\__init__.py\", line 1306, in _check_1d\n", "step": null, "ts": 1658746824.5845888}]}, "version": 127}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5845888}]}, "version": 128}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return np.atleast_1d(x)", "step": null, "ts": 1658746824.5845888}]}, "version": 129}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 130}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"<__array_function__ internals>\", line 180, in atleast_1d\n", "step": null, "ts": 1658746824.5845888}]}, "version": 131}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\numpy\\core\\shape_base.py\", line 65, in atleast_1d\n", "step": null, "ts": 1658746824.5845888}]}, "version": 132}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5845888}]}, "version": 133}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "ary = asanyarray(ary)", "step": null, "ts": 1658746824.5845888}]}, "version": 134}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 135}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\torch\\_tensor.py\", line 732, in __array__\n", "step": null, "ts": 1658746824.5845888}]}, "version": 136}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1658746824.5845888}]}, "version": 137}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return self.numpy()", "step": null, "ts": 1658746824.5845888}]}, "version": 138}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 139}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "RuntimeError", "step": null, "ts": 1658746824.5845888}]}, "version": 140}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1658746824.5845888}]}, "version": 141}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.", "step": null, "ts": 1658746824.5845888}]}, "version": 142}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1658746824.5845888}]}, "version": 143}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1658746824.5845888}]}, "version": 144}
