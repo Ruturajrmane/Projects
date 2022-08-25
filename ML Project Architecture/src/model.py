@@ -21,7 +21,7 @@ class MnistModel(torch.nn.Module):
             pass
 
     def build_model(self):
-
+        
         module_list = list()
 
         for layer_ix, layer in enumerate(self.layer_list):
@@ -51,12 +51,18 @@ class MnistModel(torch.nn.Module):
         return self.pred
 
 
-if __name__ == "__main__":
-    parser = ModelParser("../base_config.json")
+def inimodel():
+    try:
+        parser = ModelParser("../base_config.json")
+    except:
+        print('Couldn\'t import the configartion module')
+
     layers = parser.get_list()
     kwargs = parser.get_hp()[0]
     model = MnistModel(layers)
-    model = model.build_model()
-    Hyperparameters(**kwargs)
-
     
+    return model.build_model()
+
+if __name__ == '__main__':
+    model = inimodel()
+    print(model[0].weight)

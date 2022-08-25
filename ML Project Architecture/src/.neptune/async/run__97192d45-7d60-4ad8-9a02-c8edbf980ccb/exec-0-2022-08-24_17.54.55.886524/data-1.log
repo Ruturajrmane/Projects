@@ -1,0 +1,66 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1661343896.8196974}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 8.2, "step": null, "ts": 1661343896.8196974}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.648635864257812, "step": null, "ts": 1661343896.8196974}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.0001}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "Adam"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 50}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 2}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.2, "step": null, "ts": 1661343906.853869}]}, "version": 21}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.641014099121094, "step": null, "ts": 1661343906.853869}]}, "version": 22}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.1, "step": null, "ts": 1661343916.8666253}]}, "version": 23}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.625900268554688, "step": null, "ts": 1661343916.8666253}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[5, 9, 9, 4, 0, 8, 6, 8, 8, 2, 7, 6, 1, 6, 5, 2, 7, 8, 2, 6, 7, 1, 1, 9, 9, 2, 6, 2, 7, 0, 6, 8, 1, 3, 1, 9, 1, 5, 9, 9, 0, 5, 8, 1, 1, 8, 9, 7, 0, 0]", "step": null, "ts": 1661343918.8175883}]}, "version": 25}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8175883}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[5, 9, 9, 4, 0, 8, 6, 8, 1, 2, 7, 6, 1, 6, 5, 2, 7, 8, 2, 6, 7, 1, 1, 9, 9, 2, 6, 2, 9, 0, 6, 8, 1, 3, 1, 0, 1, 5, 9, 4, 0, 5, 8, 1, 1, 6, 7, 7, 0, 0]", "step": null, "ts": 1661343918.8175883}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8175883}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.88", "step": null, "ts": 1661343918.8256383}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8256383}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 0.3462589383125305", "step": null, "ts": 1661343918.8256383}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8256383}]}, "version": 32}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.88, "step": null, "ts": 1661343918.8256383}]}, "version": 33}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.3462589383125305, "step": null, "ts": 1661343918.8256383}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[5, 9, 9, 4, 0, 8, 6, 8, 8, 2, 7, 6, 1, 6, 5, 2, 7, 8, 2, 6, 7, 1, 1, 9, 9, 2, 6, 2, 7, 0, 6, 8, 1, 3, 1, 9, 1, 5, 9, 9, 0, 5, 8, 1, 1, 8, 9, 7, 0, 0]", "step": null, "ts": 1661343918.8256383}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8256383}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[5, 9, 9, 4, 0, 8, 6, 8, 1, 2, 7, 6, 1, 6, 5, 2, 7, 8, 2, 6, 7, 1, 1, 9, 9, 2, 6, 2, 9, 0, 6, 8, 1, 3, 1, 0, 1, 5, 9, 4, 0, 5, 8, 1, 1, 6, 7, 7, 0, 0]", "step": null, "ts": 1661343918.8276656}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8276656}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker ALTAFKOP202.", "step": null, "ts": 1661343918.8356836}, {"value": "Marking run as failed", "step": null, "ts": 1661343918.8356836}, {"value": "Traceback:", "step": null, "ts": 1661343918.8356836}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 186, in <module>\n    dl, da = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)\n", "step": null, "ts": 1661343918.8356836}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 119, in fit\n    df = pd.DataFrame(np.array([epoch,sum(precision)/len(precision),sum(recall)/len(recall),sum(fscore)/len(fscore),sum(support)/len(support) ]), columns=['epochs', 'precision', 'recall', 'fscore', 'support'])\n", "step": null, "ts": 1661343918.8356836}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\frame.py\", line 694, in __init__\n    mgr = ndarray_to_mgr(\n", "step": null, "ts": 1661343918.8356836}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 351, in ndarray_to_mgr\n    _check_values_indices_shape_match(values, index, columns)\n", "step": null, "ts": 1661343918.8356836}, {"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 422, in _check_values_indices_shape_match\n    raise ValueError(f\"Shape of passed values is {passed}, indices imply {implied}\")\n", "step": null, "ts": 1661343918.8356836}, {"value": "Shape of passed values is (5, 1), indices imply (5, 5)", "step": null, "ts": 1661343918.8356836}]}, "version": 39}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1661343918.8356836}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 186, in <module>\n", "step": null, "ts": 1661343918.8356836}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661343918.8377185}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "dl, da = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)", "step": null, "ts": 1661343918.8377185}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8377185}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 119, in fit\n", "step": null, "ts": 1661343918.8377185}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661343918.8377185}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "df = pd.DataFrame(np.array([epoch,sum(precision)/len(precision),sum(recall)/len(recall),sum(fscore)/len(fscore),sum(support)/len(support) ]), columns=['epochs', 'precision', 'recall', 'fscore', 'support'])", "step": null, "ts": 1661343918.8377185}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8377185}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\frame.py\", line 694, in __init__\n", "step": null, "ts": 1661343918.8377185}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661343918.8377185}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "mgr = ndarray_to_mgr(", "step": null, "ts": 1661343918.8377185}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8377185}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 351, in ndarray_to_mgr\n", "step": null, "ts": 1661343918.8377185}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661343918.8377185}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "_check_values_indices_shape_match(values, index, columns)", "step": null, "ts": 1661343918.8377185}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8377185}]}, "version": 57}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 422, in _check_values_indices_shape_match\n", "step": null, "ts": 1661343918.8377185}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661343918.8377185}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "raise ValueError(f\"Shape of passed values is {passed}, indices imply {implied}\")", "step": null, "ts": 1661343918.8377185}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8377185}]}, "version": 61}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "ValueError", "step": null, "ts": 1661343918.8477993}]}, "version": 62}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1661343918.8477993}]}, "version": 63}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Shape of passed values is (5, 1), indices imply (5, 5)", "step": null, "ts": 1661343918.8477993}]}, "version": 64}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661343918.8477993}]}, "version": 65}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1661343918.8477993}]}, "version": 66}

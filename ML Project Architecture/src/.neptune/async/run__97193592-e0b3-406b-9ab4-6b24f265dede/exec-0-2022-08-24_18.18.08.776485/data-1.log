@@ -1,0 +1,45 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1661345289.7780216}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 7.8, "step": null, "ts": 1661345289.7780216}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.828216552734375, "step": null, "ts": 1661345289.7780216}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.0001}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "Adam"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 50}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 2}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.4, "step": null, "ts": 1661345299.8007143}]}, "version": 21}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.856109619140625, "step": null, "ts": 1661345299.8007143}]}, "version": 22}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.1, "step": null, "ts": 1661345309.8169246}]}, "version": 23}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.839607238769531, "step": null, "ts": 1661345309.8169246}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 1, is 0.9197999999999995", "step": null, "ts": 1661345314.9465456}]}, "version": 25}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661345314.9465456}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 1, is 0.2748929262161255", "step": null, "ts": 1661345314.9465456}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661345314.9465456}]}, "version": 28}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9197999999999995, "step": null, "ts": 1661345314.9465456}]}, "version": 29}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.2748929262161255, "step": null, "ts": 1661345314.9545925}]}, "version": 30}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 54.9, "step": null, "ts": 1661345319.8360813}]}, "version": 31}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.846744537353516, "step": null, "ts": 1661345319.8360813}]}, "version": 32}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.6, "step": null, "ts": 1661345329.849989}]}, "version": 33}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.874519348144531, "step": null, "ts": 1661345329.849989}]}, "version": 34}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.4, "step": null, "ts": 1661345339.8542266}]}, "version": 35}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 9.831745147705078, "step": null, "ts": 1661345339.8542266}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Accuracy of epoch 2, is 0.9441999999999989", "step": null, "ts": 1661345342.259685}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661345342.259685}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Loss of epoch 2, is 0.19191120564937592", "step": null, "ts": 1661345342.267712}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661345342.267712}]}, "version": 40}
+{"obj": {"type": "LogFloats", "path": ["Val", "accu"], "values": [{"value": 0.9441999999999989, "step": null, "ts": 1661345342.267712}]}, "version": 41}
+{"obj": {"type": "LogFloats", "path": ["Val", "loss"], "values": [{"value": 0.19191120564937592, "step": null, "ts": 1661345342.2697294}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "C:/Users/RuturajMane/Desktop/MNIST_CNN/mnist-ruturaj/Logs/Train/2022_08_24-06_19_02_PM.csv", "step": null, "ts": 1661345342.289949}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661345342.289949}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1661345346.1956363}]}, "version": 45}

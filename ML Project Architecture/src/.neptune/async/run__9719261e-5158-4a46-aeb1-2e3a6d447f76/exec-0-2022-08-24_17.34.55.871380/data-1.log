@@ -1,0 +1,42 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "ALTAFKOP202"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1661342697.095819}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 15.878307342529297, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 16.7, "step": null, "ts": 1661342697.0992396}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.04791259765625, "step": null, "ts": 1661342697.0992396}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["Parameters", "learning_rate"], "value": 0.0001}, "version": 16}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Optimizer"], "value": "Adam"}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Batch_size"], "value": 50}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["Parameters", "Epochs"], "value": 2}, "version": 19}
+{"obj": {"type": "AssignString", "path": ["Parameters", "Loss_fn"], "value": "cross_entropy"}, "version": 20}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.6, "step": null, "ts": 1661342707.1122615}]}, "version": 21}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.030193328857422, "step": null, "ts": 1661342707.1122615}]}, "version": 22}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 55.6, "step": null, "ts": 1661342717.1163394}]}, "version": 23}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.011886596679688, "step": null, "ts": 1661342717.1163394}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([1, 4, 4, 8, 4, 6, 2, 0, 6, 8, 6, 7, 5, 6, 2, 7, 4, 1, 0, 1, 1, 2, 1, 6,\n        9, 3, 0, 4, 4, 3, 6, 9, 2, 8, 3, 9, 3, 3, 3, 2, 1, 8, 9, 1, 0, 4, 0, 8,\n        3, 7])", "step": null, "ts": 1661342719.3582602}]}, "version": 25}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1661342719.3644376}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker ALTAFKOP202.", "step": null, "ts": 1661342719.365437}, {"value": "Marking run as failed", "step": null, "ts": 1661342719.365437}, {"value": "Traceback:", "step": null, "ts": 1661342719.365437}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 176, in <module>\n    dl, da = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)\n", "step": null, "ts": 1661342719.365437}, {"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 91, in fit\n    predicts.append(pred.flatten().item())\n", "step": null, "ts": 1661342719.365437}, {"value": "only one element tensors can be converted to Python scalars", "step": null, "ts": 1661342719.365437}]}, "version": 27}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1661342719.365437}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 176, in <module>\n", "step": null, "ts": 1661342719.365437}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661342719.3664856}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "dl, da = fit(epochs, lr, train_loader, val_loader, loss_fn, optm)", "step": null, "ts": 1661342719.3664856}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661342719.3674817}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"C:\\Users\\RuturajMane\\Desktop\\MNIST_CNN\\mnist-ruturaj\\src\\train.py\", line 91, in fit\n", "step": null, "ts": 1661342719.3674817}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1661342719.3684816}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "predicts.append(pred.flatten().item())", "step": null, "ts": 1661342719.3684816}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661342719.3684816}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "ValueError", "step": null, "ts": 1661342719.3694162}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1661342719.3694162}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "only one element tensors can be converted to Python scalars", "step": null, "ts": 1661342719.3694162}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1661342719.371418}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1661342719.3746812}]}, "version": 42}
