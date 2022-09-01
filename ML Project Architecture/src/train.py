@@ -138,7 +138,7 @@ def fit(epochs, lr, train_loader, val_loader, loss_fn, opt):
     df_f.to_csv(pathout)
     return lv,av,lt
 
-    
+ 
 if __name__ == "__main__":
 
     if args.Configpath == None:
@@ -159,12 +159,9 @@ if __name__ == "__main__":
     
 
     # To do convert to if else
-    try:
-        assert isinstance(model[0].weight, torch.nn.parameter.Parameter), 'Model isnot initialized'
+    
+    assert isinstance(model[0].weight, torch.nn.parameter.Parameter), 'Model isnot initialized'
        
-    except AssertionError as msg :
-        print(msg)
-
     Hyperparameters(**kwargs)
 
     # Assigning hyperparametres
